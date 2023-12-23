@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Categories from 'components/Categories';
 import TopSales from 'components/TopSales';
 import News from 'components/News';
+import Auctions from 'components/Auctions';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Categories />
       <TopSales />
       <News/>
+      <Auctions/>
     </div>
   );
 }

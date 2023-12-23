@@ -19,3 +19,14 @@ export type TTopSales = {
   isLiked: boolean;
   id: number;
 };
+export type TAuctionSales = {
+  name: string;
+  image: string;
+  inCart: number;
+  price: number;
+  oldPrice: number;
+  inStock: boolean;
+  isSet: boolean;
+  isLiked: boolean;
+  id: number;
+};

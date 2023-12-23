@@ -55,6 +55,13 @@
   overflow: hidden; 
   white-space: nowrap;
   text-overflow: ellipsis; 
+  color: #F00;
+  span {
+    color: #808080;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-left: 10px;
+  }
 }
 
 .top-inStock,
