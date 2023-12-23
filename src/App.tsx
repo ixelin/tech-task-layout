@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Categories from 'components/Categories';
 import TopSales from 'components/TopSales';
+import News from 'components/News';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Stories />
       <Categories />
       <TopSales />
+      <News/>
     </div>
   );
 }

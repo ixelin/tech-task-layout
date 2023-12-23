@@ -1,0 +1,14 @@
+.header {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+.link {
+  font-size: 16px;
+  color: #3186C3;
+  font-weight: 400;
+}

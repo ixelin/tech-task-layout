@@ -1,9 +1,17 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("assets/Gilroy.otf") format("opentype");
-  font-weight: normal;
+  src: url("assets/Gilroy-Light.otf") format("opentype");
+  font-weight: 300; /* Light */
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("assets/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* ExtraBold */
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: "Gilroy", sans-serif;
@@ -11,7 +19,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #f8faff;
 }
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
