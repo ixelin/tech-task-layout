@@ -2,7 +2,7 @@ import { useAppSelector } from 'app/hooks'
 import Story from './Story';
 import style from "./Stories.module.css"
 const Stories = () => {
-  const stories = useAppSelector((state) => state.storiesSlice.stories)
+  const stories = useAppSelector((state) => state.stories.stories)
   return (
     <div className={style.stories}>
       {stories.map((story) => (

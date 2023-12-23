@@ -3,3 +3,9 @@ export type TStory = {
   image: string;
   id: number,
 };
+export type TCategory = {
+  name: string;
+  image: string;
+  goodsAmount: number;
+  id: number;
+};

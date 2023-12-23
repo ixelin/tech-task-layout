@@ -1,0 +1,13 @@
+.categories-container {
+  margin: 50px 100px;
+}
+.categories {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.categories-header {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}

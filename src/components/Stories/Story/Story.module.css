@@ -20,6 +20,9 @@
   font-size: 12px;
   font-weight: 400;
   margin-top: 7px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .story-image_disabled {
   width: 60px;

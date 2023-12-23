@@ -1,11 +1,12 @@
-// src/app/store.ts
 import { configureStore } from "@reduxjs/toolkit";
-import navbarReducer from "../features/navbar/navbarSlice";
+import navbarSlice from "../features/navbar/navbarSlice";
 import storiesSlice from "features/stories/storiesSlice";
+import categoriesSlice from "features/categories/categoriesSlice";
 export const store = configureStore({
   reducer: {
-    navbar: navbarReducer,
-    storiesSlice: storiesSlice,
+    navbar: navbarSlice,
+    stories: storiesSlice,
+    categories: categoriesSlice,
   },
 });
 
