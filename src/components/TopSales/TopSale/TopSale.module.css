@@ -1,0 +1,122 @@
+.top {
+  height: 340px;
+  width: 200px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.top-head,
+.top-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top_like_button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.50)
+}
+.top-image {
+  width: 175px;
+  height: 150px;
+  border-radius: 9px;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.top-name {
+  margin: 0;
+  margin-top: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines you want to display before truncating */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.top-price {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 900;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+}
+
+.top-inStock,
+.top-notInStock {
+  margin: 6px 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+.top-inStock {
+  color: #82CF6F;
+}
+.top-notInStock {
+  color: #FC5858;
+}
+.top-isSet,
+.top-notSet {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.top-isSet p,
+.top-notSet p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+.top-isSet div,
+.top-notSet div {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.top-isSet p {
+  color: #3286C2;
+}
+.top-isSet div {
+  background: #3286C2;
+}
+.top-notSet p {
+  color: #00000033;
+}
+.top-notSet div {
+  background: #00000033;
+}
+.top-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.top-inCart {
+  font-size: 15px;
+  font-weight: 600;
+}
+.top-cart-button{
+  width: 33px;
+  height: 33px;
+  border: none;
+  border-radius: 50%;
+  background: #f5f5f5;
+  transition: 0.3s;
+  font-size: 24px;
+}
+.top-cart-button:hover{
+  color: white;
+  background: #3286C2;
+}

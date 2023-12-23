@@ -9,3 +9,13 @@ export type TCategory = {
   goodsAmount: number;
   id: number;
 };
+export type TTopSales = {
+  name: string;
+  image: string;
+  inCart: number;
+  price: number;
+  inStock:boolean;
+  isSet: boolean;
+  isLiked: boolean;
+  id: number;
+};
