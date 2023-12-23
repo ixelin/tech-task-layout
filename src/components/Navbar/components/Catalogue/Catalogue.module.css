@@ -1,0 +1,18 @@
+.catalogue_container {
+  height: 40px;
+  width: 138px;
+  color: #fff;
+  border-radius: 100px;
+  background-color: #0000001a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+}
+.catalogue_text {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  margin-left: 15px;
+}

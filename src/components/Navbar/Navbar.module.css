@@ -1,0 +1,8 @@
+.navbar_container {
+  background: #2D82BE;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
