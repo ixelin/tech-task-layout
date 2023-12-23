@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface NavbarState {
-  profileNotifications: Number | String,
-  cartNotifications: Number | String,
-  numOfGoods: Number,  
+  profileNotifications: number | string,
+  cartNotifications: number | string,
+  numOfGoods: number,  
 }
 
 const initialState: NavbarState = {

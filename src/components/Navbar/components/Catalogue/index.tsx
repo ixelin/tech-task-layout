@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "./Catalogue.module.css"
 import CatalogueIcon from "assets/BurgerCatalogue.svg"
 const Catalogue = () => {

@@ -1,4 +1,4 @@
-import React from 'react';
+import Stories from 'components/Stories';
 import './App.css';
 import Navbar from './components/Navbar';
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <div style={{background:'black', width: "100%", height:'40px'}}></div>
+      <Stories />
     </div>
   );
 }

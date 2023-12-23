@@ -1,0 +1,36 @@
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 81px;
+  width: 60px;
+}
+.story-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1.5px solid;
+  background-size: cover !important;
+  background-position: center !important;
+  margin: 0 30px;
+}
+.story-name {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 7px;
+}
+.story-image_disabled {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: #ecedf2;
+}
+.story-name_disabled {
+  width: 52px;
+  height: 12px;
+  margin-top: 7px;
+  background: #ecedf2;
+}

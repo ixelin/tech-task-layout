@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./AuthStatus.module.css";
 import ProfileIcon from "assets/Profile.svg";
 import CartIcon from "assets/Cart.svg";
@@ -15,12 +14,12 @@ const AuthStatus = () => {
       <div className={styles["auth-buttons"]}>
         <button className={styles["auth-profile"]}>
           <img src={ProfileIcon} alt="Profile" />
-          {+profileNotifications? <div className={styles["auth-popup"]}>{+profileNotifications > 99? "99+" : profileNotifications.toString()}</div> : null}
+          {+profileNotifications? <div className={styles["auth-popup"]}>{+profileNotifications > 99? "99+" : profileNotifications}</div> : null}
         </button>
         <div className={styles["auth-line"]}></div>
         <button className={styles["auth-cart"]}>
           <img src={CartIcon} alt="Cart" />
-          {+cartNotifications? <div className={styles["auth-popup"]}>{+cartNotifications > 99? "99+" : cartNotifications.toString()}</div> : null}
+          {+cartNotifications? <div className={styles["auth-popup"]}>{+cartNotifications > 99? "99+" : cartNotifications}</div> : null}
         </button>
       </div>
     </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Navbar.module.css"
 import Logo from "./components/Logo";
 import Catalogue from "./components/Catalogue";

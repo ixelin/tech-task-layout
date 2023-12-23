@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "./SearchBar.module.css"
 import SearchIcon from "assets/Search.svg"
 import { useAppSelector } from 'app/hooks'
@@ -11,7 +10,7 @@ const SearchBar = () => {
         alt="Search icon"
         className={styles["search-icon"]}
       />
-      <span className={styles['search-numOfGoods']}>{numOfGoods.toString()}</span>
+      <span className={styles['search-numOfGoods']}>{numOfGoods}</span>
       <input type="text" className={styles["search-bar"]} placeholder="Поиск" />
     </div>
   );
