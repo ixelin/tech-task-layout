@@ -19,7 +19,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #f8faff;
 }
-
+input {
+  font-family: "Gilroy", sans-serif;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

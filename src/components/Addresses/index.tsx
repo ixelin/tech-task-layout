@@ -19,7 +19,13 @@ const Addresses = () => {
               <img src={Iskender} alt="iskender logo" />
               <div>
                 <h2>Iskender home</h2>
-                <a href="#">открыть в карте</a>
+                <a
+                  href="https://2gis.kg/bishkek/geo/15763234351106795?m=74.585962%2C42.888275%2F18.65"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  открыть в карте
+                </a>
               </div>
             </div>
             <img src={Arrow} alt="arrow right" />
@@ -48,7 +54,13 @@ const Addresses = () => {
               <img src={Iskender} alt="iskender logo" />
               <div>
                 <h2>Iskender home</h2>
-                <a href="#">открыть в карте</a>
+                <a
+                  href="https://2gis.kg/bishkek/geo/15763234351167904?m=74.657414%2C42.878066%2F18.65"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  открыть в карте
+                </a>
               </div>
             </div>
             <img src={Arrow} alt="arrow right" />
@@ -57,7 +69,7 @@ const Addresses = () => {
           <div className={style.addresses_bottom}>
             <div className={style.location}>
               <img src={Location} alt="location icon" />
-              <p>Кыргызстан, г. Бишкек ул. Турусбекова A167</p>
+              <p>Кыргызстан, г. Бишкек ул. Лермонтова 6</p>
             </div>
             <div className={style.time_phone}>
               <div className={style.clock}>
@@ -77,7 +89,13 @@ const Addresses = () => {
               <img src={Iskender} alt="iskender logo" />
               <div>
                 <h2>Iskender home</h2>
-                <a href="#">открыть в карте</a>
+                <a
+                  href="https://2gis.kg/bishkek/firm/70000001019348256?m=74.568455%2C42.866125%2F18.65"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  открыть в карте
+                </a>
               </div>
             </div>
             <img src={Arrow} alt="arrow right" />
@@ -86,7 +104,7 @@ const Addresses = () => {
           <div className={style.addresses_bottom}>
             <div className={style.location}>
               <img src={Location} alt="location icon" />
-              <p>Кыргызстан, г. Бишкек ул. Турусбекова A167</p>
+              <p>Кыргызстан, г. Бишкек ул. Льва-Толстого 19</p>
             </div>
             <div className={style.time_phone}>
               <div className={style.clock}>

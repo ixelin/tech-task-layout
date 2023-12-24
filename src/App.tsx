@@ -6,6 +6,7 @@ import TopSales from "components/TopSales";
 import News from "components/News";
 import Auctions from "components/Auctions";
 import Addresses from "components/Addresses";
+import Footer from "components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <News />
       <Auctions />
       <Addresses />
+      <Footer />
     </div>
   );
 }

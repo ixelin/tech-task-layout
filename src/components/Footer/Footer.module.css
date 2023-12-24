@@ -1,0 +1,124 @@
+p,
+span,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  width: 100%;
+  height: 564px;
+  background: linear-gradient(107deg, #3186c3 6.46%, #004f86 68.08%);
+  padding: 70px 110px 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+}
+.footer_column {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  p {
+    font-size: 15px;
+    color: #e0e0e0;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  span {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 230px;
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Poppins, sans-serif;
+  }
+  div {
+    margin: 0 !important;
+    margin-bottom: 42px !important;
+    img {
+      width: 181px;
+      height: 51px;
+    }
+  }
+}
+.appStore {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  background: none;
+  border: none;
+}
+.googlePlay {
+  background: black;
+  border: none;
+  width: 144px;
+  height: 46px;
+  border-radius: 8px;
+}
+.buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 50px;
+}
+h2 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.phone_numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.whatsApp {
+  width: 125px;
+  height: 29px;
+  border-radius: 100px;
+  background: #fff;
+  color: #2cb742;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  margin-top: 20px;
+  border: none;
+}
+
+.footer_bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    width: 491px;
+    color: var(--Transparent-white, rgba(255, 255, 255, 0.5));
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
+.footer_bottom-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  img {
+    display: flex;
+    width: 22px;
+    height: 22px;
+    padding: 0.75px 0.745px 0.748px 0.75px;
+    justify-content: center;
+    align-items: center;
+  }
+}
