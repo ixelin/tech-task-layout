@@ -98,7 +98,13 @@ export const auction = createSlice({
         item.inCart--;
       }
     },
+    toggleAuctionLike: (state, action: PayloadAction<number>) => {
+      const item = state.auctions.find((item) => item.id === action.payload);
+      if (item) {
+        item.isLiked = !item.isLiked;
+      }
+    },
   },
 });
-export const { incrementInAuctionCart, decrementInAuctionCart } = auction.actions;
+export const { incrementInAuctionCart, decrementInAuctionCart, toggleAuctionLike } = auction.actions;
 export default auction.reducer;

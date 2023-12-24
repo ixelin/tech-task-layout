@@ -92,7 +92,13 @@ export const topSalesSlice = createSlice({
         item.inCart--;
       }
     },
+    toggleLike: (state, action: PayloadAction<number>) => {
+      const item = state.topSales.find((item) => item.id === action.payload);
+      if (item) {
+        item.isLiked = !item.isLiked;
+      }
+    },
   },
 });
-export const { incrementInCart, decrementInCart } = topSalesSlice.actions;
+export const { incrementInCart, decrementInCart, toggleLike } = topSalesSlice.actions;
 export default topSalesSlice.reducer;

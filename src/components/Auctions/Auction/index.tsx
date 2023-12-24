@@ -4,7 +4,11 @@ import style from "./Auction.module.css";
 import { useAppDispatch } from "app/hooks";
 import Heart from "assets/Heart.svg";
 import HeartFilled from "assets/HeartFilled.svg";
-import { decrementInAuctionCart, incrementInAuctionCart } from "features/auction/auctionSlice";
+import {
+  decrementInAuctionCart,
+  incrementInAuctionCart,
+  toggleAuctionLike,
+} from "features/auction/auctionSlice";
 const Auction: React.FC<{ item: TAuctionSales }> = ({ item }) => {
   const dispatch = useAppDispatch();
   const handleIncrement = () => {
@@ -14,14 +18,17 @@ const Auction: React.FC<{ item: TAuctionSales }> = ({ item }) => {
   const handleDecrement = () => {
     dispatch(decrementInAuctionCart(item.id));
   };
+  const handleLike = () => {
+    dispatch(toggleAuctionLike(item.id));
+  };
   return (
     <div className={style.top}>
       {item.isLiked ? (
-        <div className={style.top_like_button}>
+        <div className={style.top_like_button} onClick={handleLike}>
           <img src={HeartFilled} alt="liked" />
         </div>
       ) : (
-        <div className={style.top_like_button}>
+        <div className={style.top_like_button} onClick={handleLike}>
           <img src={Heart} alt="not liked" />
         </div>
       )}
@@ -35,7 +42,9 @@ const Auction: React.FC<{ item: TAuctionSales }> = ({ item }) => {
         <p className={style["top-name"]}>{item.name}</p>
       </div>
       <div className={style["top-footer"]}>
-        <p className={style["top-price"]}>{item.price} c<span>{item.oldPrice} c</span></p>
+        <p className={style["top-price"]}>
+          {item.price} c<span>{item.oldPrice} c</span>
+        </p>
         {item.inStock ? (
           <p className={style["top-inStock"]}>В наличии</p>
         ) : (
@@ -49,7 +58,7 @@ const Auction: React.FC<{ item: TAuctionSales }> = ({ item }) => {
         ) : (
           <div className={style["top-notSet"]}>
             <div></div>
-            <p>Не Комплект</p>
+            <p>Комплект</p>
           </div>
         )}
         <div className={style["top-cart"]}>

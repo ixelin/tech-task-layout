@@ -5,6 +5,7 @@ import { useAppDispatch } from "app/hooks";
 import {
   decrementInCart,
   incrementInCart,
+  toggleLike,
 } from "features/topSales/topSalesSlice";
 import Heart from "assets/Heart.svg";
 import HeartFilled from "assets/HeartFilled.svg";
@@ -17,17 +18,20 @@ const TopSale: React.FC<{ item: TTopSales }> = ({ item }) => {
   const handleDecrement = () => {
     dispatch(decrementInCart(item.id));
   };
+  const handleLike = () => {
+    dispatch(toggleLike(item.id));
+  };
   return (
     <div className={style.top}>
-        {item.isLiked ? (
-          <div className={style.top_like_button}>
-            <img src={HeartFilled} alt="liked" />
-          </div>
-        ) : (
-          <div className={style.top_like_button}>
-            <img src={Heart} alt="not liked" />
-          </div>
-        )}
+      {item.isLiked ? (
+        <div className={style.top_like_button} onClick={handleLike}>
+          <img src={HeartFilled} alt="liked"  />
+        </div>
+      ) : (
+        <div className={style.top_like_button} onClick={handleLike}>
+          <img src={Heart} alt="not liked"  />
+        </div>
+      )}
       <div className={style["top-head"]}>
         <div
           className={style["top-image"]}
@@ -52,7 +56,7 @@ const TopSale: React.FC<{ item: TTopSales }> = ({ item }) => {
         ) : (
           <div className={style["top-notSet"]}>
             <div></div>
-            <p>Не Комплект</p>
+            <p>Комплект</p>
           </div>
         )}
         <div className={style["top-cart"]}>
