@@ -4,3 +4,8 @@
     gap: 30px;
     flex-wrap: wrap;
 }
+@media screen and (max-width: 640px) {
+  .stories {
+    margin: 20px 50px;
+  }
+}

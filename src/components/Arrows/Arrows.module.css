@@ -1,0 +1,15 @@
+.arrows {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  margin: 0 auto;
+  width: 110%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 640px) {
+    .arrows {
+        width: 120%;
+        left: -10%;
+    }
+}

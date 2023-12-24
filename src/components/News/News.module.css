@@ -65,3 +65,8 @@
     left: -18px;
     z-index: 0;
 }
+@media screen and (max-width: 640px) {
+  .news-container {
+    margin: 50px 50px;
+  }
+}

@@ -8,3 +8,8 @@
   gap: 10px;
 }
 
+@media screen and (max-width: 640px) {
+  .topSales-container {
+    margin: 50px 50px;
+  }
+}

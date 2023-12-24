@@ -11,3 +11,8 @@
   font-weight: 800;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 640px) {
+  .categories-container {
+    margin: 50px 50px;
+  }
+}
